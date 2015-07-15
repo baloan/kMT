@@ -25,7 +25,7 @@ def main():
     cx = ksp.connect(name='Trajectory')
     ksp.set_globals(cx)
     # system.checkvessel("Surveyor 1")
-    # warp.warpday()
+    warp.warpday()
     # setup staging
     try:
         staging = STAGING_DICT[SC.active_vessel.name]

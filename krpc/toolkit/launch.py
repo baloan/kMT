@@ -102,7 +102,8 @@ def ltoa(ascent_profile=DEFAULT_PROFILE):
         #print("tta: {:3.0f} q: {:5.0f} pitch: flight {:2.1f}, target {:2.1f}".format(tta, q, pitch, target_pitch))
         time.sleep(0.5)
     control.throttle = 0
-    auto_pilot.set_direction(flight.direction, roll=90, wait=True)
+    # auto_pilot.set_direction(flight.direction, roll=90, wait=True)
+    auto_pilot.set_direction(flight.direction, roll=0, wait=True)
     print("Waiting to leave atmosphere {:.0f}km".format(body.atmosphere_depth / 1000))
     while flight.mean_altitude < body.atmosphere_depth:
         time.sleep(1)

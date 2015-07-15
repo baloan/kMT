@@ -34,7 +34,7 @@ def execute(nd=None):
     print("Turning ship to burn direction.")
     # workaround for steering:pitch not working with node assigned
     auto_pilot.set_direction(
-        nd.burn_vector(), roll=90, reference_frame=vessel.orbital_reference_frame)
+        nd.burn_vector(), roll=0, reference_frame=vessel.orbital_reference_frame)
     # SC.warp_to(nd.ut - 5)
     print("Orbital burn start {:.0f}s before apoapsis.".format(nd.time_to))
     # lock steering to node:prograde which wanders off at small deltav

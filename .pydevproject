@@ -3,8 +3,6 @@
 <pydev_property name="org.python.pydev.PYTHON_PROJECT_INTERPRETER">Default</pydev_property>
 <pydev_property name="org.python.pydev.PYTHON_PROJECT_VERSION">python 2.7</pydev_property>
 <pydev_pathproperty name="org.python.pydev.PROJECT_SOURCE_PATH">
-<path>/${PROJECT_DIR_NAME}/krpc/missions</path>
-<path>/${PROJECT_DIR_NAME}/krpc/toolkit</path>
-<path>/${PROJECT_DIR_NAME}/krpc/vessels</path>
+<path>/${PROJECT_DIR_NAME}/krpc</path>
 </pydev_pathproperty>
 </pydev_project>
